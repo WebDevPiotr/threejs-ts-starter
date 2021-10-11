@@ -29,17 +29,6 @@ module.exports = {
         use: 'ts-loader',
         exclude: path.resolve(__dirname, 'node_modules'),
       },
-      {
-        type: 'javascript/auto',
-        test: /\.(svg|png|jpg|gif|json)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "imgs"
-          }
-        }
-      },
     ]
   },
 };
